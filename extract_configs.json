@@ -1,0 +1,110 @@
+{
+    "general": {
+        "country": {
+            "name": "FRA",
+            "shapefiles": {
+                "lvl_0": "gadm41_{}_0.json",
+                "lvl_1": "gadm41_{}_1.json",
+                "lvl_2": "gadm41_{}_2.json"
+            },
+            
+            "bm_tiles": ["/vsigs/bdo-black-marble-global-impute/{}/h17v04_{}.tif",
+                         "/vsigs/bdo-black-marble-global-impute/{}/h18v03_{}.tif",
+                         "/vsigs/bdo-black-marble-global-impute/{}/h17v03_{}.tif",
+                         "/vsigs/bdo-black-marble-global-impute/{}/h18v04_{}.tif"]
+
+        },
+
+        "crs": "EPSG:4326",
+
+        "raw_data": {
+            "all_components": ["land_cover", "avg_temp", "max_temp", "so2", "co", "luminosity", "o3", "population", "no2", "pm25", "precipitation"],
+            "temp_components": ["avg_temp", "max_temp", "precipitation"],
+            "air_components": ["so2", "co", "o3", "no2", "pm25"],
+            "forest_components": ["land_cover"]
+
+        },
+
+        "gdam": {
+            "version": "4.1"
+        },
+
+        "gcs_sv_acc": "bigdataobservatory-creds-2.json"
+    },
+
+    "gee": {
+        "temperature": {
+            "source": "ECMWF/ERA5_LAND/HOURLY",
+            "start_date": "2000-01-01",
+            "end_date": "2022-12-31",
+            "bands": ["temperature_2m"],
+            "scale": 11000
+        },
+    
+        "precipitation": {
+            "source": "ECMWF/ERA5_LAND/HOURLY",
+            "start_date": "2000-01-01",
+            "end_date": "2022-12-31",
+            "bands": ["total_precipitation"],
+            "scale": 11000
+        },
+    
+        "pm25": {
+            "source": "ECMWF/CAMS/NRT",
+            "start_date": "2019-01-01",
+            "end_date": "2022-12-31",
+            "bands": ["particulate_matter_d_less_than_25_um_surface"],
+            "scale": 11000
+        },
+    
+        "no2": {
+            "source": "COPERNICUS/S5P/NRTI/L3_NO2",
+            "start_date": "2019-01-01",
+            "end_date": "2022-12-31",
+            "bands": ["NO2_column_number_density"],
+            "scale": 1000
+         },
+    
+         "so2": {
+            "source": "COPERNICUS/S5P/NRTI/L3_SO2",
+            "start_date": "2019-01-01",
+            "end_date": "2022-12-31",
+            "bands": ["SO2_column_number_density"],
+            "scale": 1000
+        },
+    
+        "co": {
+            "source": "COPERNICUS/S5P/NRTI/L3_CO",
+            "start_date": "2019-01-01",
+            "end_date": "2022-12-31",
+            "bands": ["CO_column_number_density"],
+            "scale": 1000
+        },
+    
+        "o3": {
+            "source": "COPERNICUS/S5P/NRTI/L3_O3",
+            "start_date": "2019-01-01",
+            "end_date": "2022-12-31",
+            "bands": ["O3_column_number_density"],
+            "scale": 1000
+        },
+    
+        "land_cover": {
+            "source": "GOOGLE/DYNAMICWORLD/V1",
+            "start_year": 2019,
+            "end_year": 2022,
+            "bands": ["label"],
+            "scale": 10
+        }
+    }, 
+
+    "external": {
+        "temperature": {
+            "source": "",
+            "bands": ["tas", "tasmax"],
+            "start_date": ["2000-01-01", "2018-01-01"],
+            "end_date": ["2010-12-31", "2022-12-31"]
+        }
+    }
+
+}
