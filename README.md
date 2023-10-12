@@ -3,7 +3,8 @@
 
 ## Description
 
-The [Green Economy Diagnostic (GED)](https://gpbp-ged.vercel.app/) is a tool that maps the economic and environmental performance of sub-national regions within a country. It is designed to provide a standardized, transparent, and comprehensive picture of regional performance in terms of both economic and environmental factors. It is aimed to help raise public awareness of nations' current development and the challenges they are facing. It is also meant to be a tool to aid governments in driving evidence-based policy making, managing public assets, and targeting infrastructure investments.
+
+The [Green Economy Diagnostic (GED)](https://gpbp-ged.vercel.app/) is a World Bank Group tool that maps the economic and environmental performance of sub-national regions within a country. It is designed to provide a standardized, transparent, and comprehensive picture of regional performance in terms of both economic and environmental factors. It is aimed to help raise public awareness of nations' current development and the challenges they are facing. It is also meant to be a tool to aid governments in driving evidence-based policy making, managing public assets, and targeting infrastructure investments. It is part of the World Bank's [Public Investment Management - Public Assets Management platform](https://pim-pam.net/) Platform.
 
 This repository provides the code to:
 * Extract raw geospatial data which constitute the GED's scores from various public and private sources
@@ -47,4 +48,10 @@ To generate scores, please use and following the instructions detailed in the Ju
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+
+## Acknowledgments
+
+![Alt text](image-3.png)
+
+![Alt text](image.png)
