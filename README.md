@@ -52,6 +52,6 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 
 ## Acknowledgments
 
-![Alt text](images/image-3.png)
+![Alt text](wb_pimpam_ged/images/image-3.png)
 
-![Alt text](images/image.png)
+![Alt text](wb_pimpam_ged/images/image.png)
